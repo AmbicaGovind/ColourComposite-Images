@@ -1,1 +1,1 @@
-Just Python codes for creating cutouts
+Just Python codes for creating 2D cutouts of HST Images
