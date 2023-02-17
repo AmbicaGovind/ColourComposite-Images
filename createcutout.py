@@ -1,6 +1,5 @@
 """
-The following code creates a 7"x7" cutout of the F125W Band of UDS field of HST, around the coordinates 
-(34.37084961, -5.214492798)
+The following code creates a 4"x4" cutout of the F125W Band of UDS field of HST, around the coordinates given by (RA,DEC)
 
 """
 import sys
@@ -21,7 +20,7 @@ data=fits.getdata(image_file,ext=0)
 
 sky=SkyCoord(RA, DEC, unit="deg")
 position=w.world_to_pixel(sky)
-size=u.Quantity((7,7),u.arcsec)
+size=u.Quantity((4,4),u.arcsec)
 cutout=Cutout2D(data,position,size,wcs=w)
 
 hdu=fits.PrimaryHDU()
