@@ -1,5 +1,5 @@
 """
-The following piece of code combines 7"x7" cutout data from three cutouts from the F125W,F140W,F814W Bands of HST
+The following piece of code combines 4"x4" cutout data from three cutouts from the F125W,F140W,F814W Bands of HST
 and creates a composite image 
 """
 #! usr/bin/python3
